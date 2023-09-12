@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSR CONNECT</title>
+  <style>
+    /* New CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url("candd.webp");
+
+    
+    }
+
+    h1 {
+      color: #00695c; /* Dark green for headings */
+    }
+
+    h2 {
+      color: #00897b; /* Another shade of green for subheadings */
+      margin-top: 20px;
+    }
+
+    /* Styling for the header section */
+    header {
+      background-color: #00acc1; /* Blue-green header */
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    /* Styling for the container box */
+    .container {
+      background-color: #ffffff; /* White background for the container box */
+      padding: 20px;
+      border-radius: 10px; /* Soft and round padding */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      max-width: 400px; /* Limiting the width of the container box */
+      margin: 50px auto; /* Centering the box horizontally */
+    }
+
+    /* Styling for the form labels */
+    .activity-registration label {
+      font-weight: bold;
+      color: #00897b; /* Green labels for the form fields */
+      display: block;
+      margin-bottom: 10px; /* Add more vertical spacing between labels */
+    }
+
+    /* Styling for the input fields and select box */
+    .activity-registration input, 
+    .activity-registration select {
+      margin-bottom: 15px; /* Add more vertical spacing between form fields */
+      padding: 10px; /* Soft and round padding */
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 100%;
+    }
+
+    /* Styling for the submit button */
+    .activity-registration input[type="submit"] {
+      background-color: #00695c; /* Dark green submit button */
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .activity-registration input[type="submit"]:hover {
+      background-color: hsl(30, 65%, 73%); /* Slightly lighter green on hover */
+    }
+    form {
+      max-width: 400px;
+      margin-left: 0;
+      background-color: rgb(239, 186, 146);
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .donation-container {
+  max-width: 400px;
+  margin-right: auto; /* This moves the container to the right side */
+  margin-top: 160px;
+  background-color:rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+
+.donation-type {
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #007BFF;
+  color: #FFF;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 10px; 
+  left: 10px; 
+  z-index: 1; 
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.clothes-container {
+  max-width: 400px;
+  margin-right: auto; /* This moves the container to the right side */
+  margin-top: 160px;
+  background-color:rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+h2 {
+  color: #00695c; /* Dark green for headings */
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #00acc1; /* Blue-green submit button */
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #00897b; /* Slightly lighter green on hover */
+}
+
+
+  </style>
+</head>
+<body>
+  <h1>Corporate Social Responsibility.</h1>
+  
+
+
+  <h2>Register for an Activity</h2>
+  <form action="register_activity.php" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+    <label for="contact">Contact Number:</label>
+    <input type="tel" id="contact" name="contact" required>
+    <br>
+    <label for="activity">Select an Activity:</label>
+    <select id="activity" name="activity" required>
+      <option value="Volunteering">Volunteering</option>
+      <option value="Tree Plantation">Tree Plantation</option>
+      <option value="Education Drive">Education Drive</option>
+      <option value="Health Camp">Health Camp</option>
+      <option value="Food Drive">Food Drive</option>
+      <option value="Beach Cleanup">Beach Cleanup</option>
+      <option value="Senior Care">Senior Care</option>
+      <option value="Community Kitchen">Community Kitchen</option>
+      <option value="Environmental Awareness">Environmental Awareness</option>
+      <option value="Blood Donation Camp">Blood Donation Camp</option>
+      <option value="Clothing Drive">Clothing Drive</option>
+      <option value="Digital Literacy">Digital Literacy</option>
+      <option value="Animal Shelter Support">Animal Shelter Support</option>
+      <option value="Disaster Relief">Disaster Relief</option>
+      <option value="Child Education">Child Education</option>
+    </select>
+    <br>
+    <input type="submit" value="Register">
+  </form>
+  <div class="donation-container">
+    <h2>Choose a Donation Type:</h2>
+    <form id="phonePeForm" action="https://phonepe.com/pay" method="post">
+      <!-- Replace the 'amount' value with the actual amount to be donated -->
+      <input type="hidden" name="amount" value="">
+      <!-- Replace 'merchantId' and 'transactionId' with your actual values provided by PhonePe -->
+      <input type="hidden" name="merchantId" value="">
+      <input type="hidden" name="transactionId" value="">
+      <!-- Replace 'returnUrl' with the URL to which PhonePe should redirect after the transaction -->
+      <input type="hidden" name="returnUrl" value="">
+    </form>
+    <div class="donation-type">
+      <input type="radio" name="donation" id="donation1" value="10" onclick="setAmount(1000)">
+      <label for="donation1">1000</label>
+    </div>
+    <div class="donation-type">
+      <input type="radio" name="donation" id="donation2" value="25" onclick="setAmount(100)">
+      <label for="donation2">100</label>
+    </div>
+    <div class="donation-type">
+      <input type="radio" name="donation" id="donation3" value="50" onclick="setAmount(500)">
+      <label for="donation3">500</label>
+    </div>
+    <div class="donation-type">
+      <input type="radio" name="donation" id="donation4" value="100" onclick="setAmount(10000)">
+      <label for="donation4">10000</label>
+    </div>
+    <div class="donation-type">
+      <input type="radio" name="donation" id="donation5" value="custom" onclick="setCustomAmount()">
+      <label for="donation5">Custom Amount</label>
+      <input type="text" id="custom-amount" placeholder="Enter amount">
+    </div>
+    <button type="button" onclick="donate()">Donate Now</button>
+  </div>
+
+  <script>
+    function setAmount(amount) {
+      document.getElementById("phonePeForm").amount.value = amount;
+    }
+
+    function setCustomAmount() {
+      let customAmount = document.getElementById("custom-amount").value;
+      document.getElementById("phonePeForm").amount.value = customAmount;
+    }
+
+    function donate() {
+      document.getElementById("phonePeForm").submit();
+    }
+  </script>
+  <div class="clothes-container">
+    <h2>Donate Your Clothes</h2>
+    <p>Help those in need by donating your gently used clothes.</p>
+    <form action="donate.php" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="clothes">Select the clothes you want to donate:</label>
+      <select id="clothes" name="clothes" required>
+        <option value="Shirts">Shirts</option>
+        <option value="Pants">Pants</option>
+        <option value="Dresses">Dresses</option>
+        <option value="Jackets">Jackets</option>
+        <option value="Shoes">Shoes</option>
+        <option value="Accessories">Accessories</option>
+        <option value="Other">Other</option>
+      </select>
+      <input type="submit" value="Donate Now">
+    </form>
+  </div>
+  <title>Food Donation Container</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="donation-container">
+    <h2>Food Donation</h2>
+    <p>Help those in need by donating non-perishable food items.</p>
+    <form action="donate.php" method="post">
+      <label for="donation1">
+        <input type="radio" name="donation" id="donation1" value="10">
+        10 items
+      </label>
+      <label for="donation2">
+        <input type="radio" name="donation" id="donation2" value="25">
+        25 items
+      </label>
+      <label for="donation3">
+        <input type="radio" name="donation" id="donation3" value="50">
+        50 items
+      </label>
+      <label for="donation4">
+        <input type="radio" name="donation" id="donation4" value="100">
+        100 items
+      </label>
+      <label for="donation5">
+        <input type="radio" name="donation" id="donation5" value="custom">
+        Custom Amount
+        <input type="text" id="custom-amount" name="custom-amount" placeholder="Enter quantity">
+      </label>
+      <input type="submit" value="Donate Now">
+    </form>
+  </div>
+  
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSR Activities</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <!-- CSR Activities -->
+    <div id="activity-container">
+        <!-- Activity Form -->
+        <section>
+            <h2>Add New Activity</h2>
+            <form id="activity-form">
+                <input type="text" name="activityTitle" placeholder="Activity Title" required>
+                <input type="date" name="activityDate" required>
+                <input type="text" name="activityLocation" placeholder="Location" required>
+                <textarea name="activityDescription" placeholder="Description" rows="4" required></textarea>
+                <input type="number" name="volunteersNeeded" placeholder="Volunteers Needed" required>
+                <input type="file" name="activityImage" accept="image/*">
+                <button type="submit">Add Activity</button>
+            </form>
+        </section>
+
+        <!-- CSR Activity Listings -->
+        <section>
+            <h2>CSR Activity Listings</h2>
+            <table id="activity-table">
+                <tr>
+                    <th>Title</th>
+                    <th>Date</th>
+                    <th>Location</th>
+                    <th>Description</th>
+                    <th>Volunteers Needed</th>
+                    <th>Image</th>
+                </tr>
+                <!-- Existing activities will be dynamically added here -->
+            </table>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
